@@ -51,10 +51,10 @@ Shader "Smkgames/IridescenceDistortion" {
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
                 float3 normalDirection = i.normalDir;
                 float4 _Noise_var = tex2D(_Noise,TRANSFORM_TEX(i.uv0, _Noise));
-                float node_9426 = dot(normalDirection,viewDirection);
-                float2 node_5514 = ((_Noise_var.r*float2(node_9426,node_9426))*_Intensity);
-                float4 node_893 = tex2D(_RainBow,TRANSFORM_TEX(node_5514+viewDirection.xyz, _RainBow));
-                float3 emissive = node_893.rgb;
+                float  NDotV = dot(normalDirection,viewDirection);
+                float2 NDotV2 = ((_Noise_var.r*float2(NDotV,NDotV))*_Intensity);
+                float4 tex = tex2D(_RainBow,TRANSFORM_TEX(NDotV2, _RainBow));
+                float3 emissive = tex.rgb;
                 float3 finalColor = emissive;
                 return fixed4(finalColor,1);
             }
