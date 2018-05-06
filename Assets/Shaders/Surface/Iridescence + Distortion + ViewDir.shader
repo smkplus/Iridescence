@@ -1,12 +1,14 @@
-﻿Shader "Custom/Iridescence" {
+﻿Shader "Custom/Iridescence C" {
 	Properties {
 		[Space(20)][Header(MainTex and ColorRamp)][Space(20)]
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_ColorRamp("ColorRamp",2D) = "white"{}
 		_Blend("Blend",Range(0,1)) = 0.5
+		[Space(20)][Header(Mask)][Space(20)]
+		_Mask("Mask",2D) = "white"{}
 		[Space(20)][Header(Adding Distortion)][Space(20)]
 		_Noise ("Noise", 2D) = "white" {}
-		_Distortion("_Distortion",Float) = 6
+		_Distortion("Distortion",Float) = 6
 
 		[Space(20)][Header(BumpMap and BumpPower)][Space(20)]
 
@@ -34,13 +36,15 @@
 		// Use shader model 3.0 target, to get nicer looking lighting
 		#pragma target 3.0
 
-      sampler2D _MainTex,_ColorRamp,_Noise;
+      sampler2D _MainTex,_ColorRamp,_Noise,_Mask;
       sampler2D _BumpMap;
       float4 _RimColor;
 	  float _BumpIntensity;
 
 		struct Input {
           float2 uv_MainTex;
+		  float2 uv_Mask;
+		  float2 uv_Noise;
           float2 uv_BumpMap;
 		  float2 uv_ColorRamp;
           float3 viewDir;
@@ -91,15 +95,16 @@
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
 			float4 c = tex2D (_MainTex, IN.uv_MainTex);
-			float noise = tex2D(_Noise,IN.uv_MainTex);
+			float noise = tex2D(_Noise,IN.uv_Noise);
 			fixed3 normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
 			normal.z /= _BumpPower;
 			o.Normal = normalize(normal); 
 			float2 rim = dot (normalize(IN.viewDir), o.Normal);
 			//float2 rim = 1.0 - saturate(dot (normalize(IN.viewDir), o.Normal));
 			float2 noiseRim = rim*(noise*_Distortion);
-			float4 colorRamp = tex2D(_ColorRamp,TRANSFORM_TEX(noiseRim+IN.viewDir.xyz, _ColorRamp));
-
+			float4 mask = tex2D(_Mask,IN.uv_Mask);
+			float4 colorRamp = tex2D(_ColorRamp,TRANSFORM_TEX(noiseRim+IN.viewDir.xyz, _ColorRamp))*mask;
+			colorRamp = max(colorRamp,(1-mask)* c);
 		    fixed4 hsbc = fixed4(_Hue, _Saturation, _Brightness, _Contrast);
 			float4 colorRampHSBC = applyHSBCEffect(colorRamp, hsbc);
 			o.Albedo = lerp(c,colorRampHSBC,_Blend);

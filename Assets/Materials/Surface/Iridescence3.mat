@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Iridescence
-  m_Shader: {fileID: 4800000, guid: 2c521825fd9f0f04d973e138dd4d60c5, type: 3}
+  m_Name: Iridescence1
+  m_Shader: {fileID: 4800000, guid: 09e828740a5e22a4bb3565f84fa08c74, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: a9f7d4f372f3f7f479339a3f063fdbe8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorRamp:
@@ -27,23 +27,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b3c90777a36eeae43bec7d73ed312b98, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1817bfe5f4d8c5f47910502a2f1f6cb3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0.42, y: 0}
     - _Noise:
-        m_Texture: {fileID: 2800000, guid: 4ce5ef3b29a6c29439ede74798e3493d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9254094ae4d96a243b3b8cd262ae5de2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Blend: 1
+    - _Blend: 0.196
     - _Brightness: 0.5
-    - _BumpPower: 1
+    - _BumpPower: 0.1
     - _Contrast: 0.5
-    - _Distortion: 6
+    - _Distortion: 3.05
     - _Glossiness: 0.5
     - _Hue: 0
-    - _Intensity: 6.42
-    - _Metallic: 1
+    - _Intensity: 1
+    - _Metallic: 0
     - _Saturation: 0.5
     m_Colors:
     - _RimColor: {r: 0.26, g: 0.19, b: 0.16, a: 0}
