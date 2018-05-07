@@ -3,7 +3,7 @@
 Iridescence (also known as goniochromism) is the phenomenon of certain surfaces that appear to gradually change colour as the angle of view or the angle of illumination changes. Examples of iridescence include soap bubbles, butterfly wings and seashells, as well as certain minerals. It is often created by structural coloration (microstructures that interfere with light).
 Reference : https://en.wikipedia.org/wiki/Iridescence
 
-You can discuss here :[Unity Forum](https://forum.unity.com/threads/i-need-an-iridescence-shader.464782/#post-3485519)
+You can discuss In [Unity Forum](https://forum.unity.com/threads/i-need-an-iridescence-shader.464782/#post-3485519)
 
 _________
 ![iridescent shader](https://user-images.githubusercontent.com/16706911/39463420-29ea6ff4-4d2d-11e8-8729-6d398bbc73ce.gif)
