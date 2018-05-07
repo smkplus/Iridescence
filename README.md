@@ -18,4 +18,9 @@ https://en.wikipedia.org/wiki/Iridescence
 ![sf_iridescence_512018](https://user-images.githubusercontent.com/16706911/39463043-d72e663c-4d2a-11e8-8289-e99c1506e96e.png)
 
 
+# Anisotropic Iridescence
+![Anisotropic Iridescence](https://user-images.githubusercontent.com/16706911/39716976-255c21ca-5247-11e8-81d8-acc5e7daf975.gif)
+
+# Fish Iridescence
+![Fish Iridescence](https://forum.unity.com/proxy.php?image=https%3A%2F%2Fuser-images.githubusercontent.com%2F16706911%2F39671362-10e52d0c-512c-11e8-9939-ae1021e07e0f.gif&hash=7f40607a2e8a0f0c608e7a0f622f7e34)
 
