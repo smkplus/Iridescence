@@ -14,8 +14,6 @@ Reference : https://en.wikipedia.org/wiki/Iridescence
 
 
 
-_______________
-
 ![iridescent shader](https://user-images.githubusercontent.com/16706911/39463420-29ea6ff4-4d2d-11e8-8729-6d398bbc73ce.gif)
 
 ![Image1](https://user-images.githubusercontent.com/16706911/39462989-94e52fae-4d2a-11e8-84f5-04db15e06c54.PNG)
@@ -39,6 +37,8 @@ _______________
 # Discussion
 You can discuss In [Unity Forum](https://forum.unity.com/threads/i-need-an-iridescence-shader.464782/#post-3485519)
 
-# َAbout Me
+# About Me
+
 I'm Seyed Morteza Kamaly I was born to shade, for the past year I've been dedicating more of my time to the creation of tutorials, mainly about shaders. If you think these posts have either helped or inspired you, please consider supporting me. Thank you so much for your contribution!
+
 https://www.patreon.com/Smkgames
