@@ -1,4 +1,6 @@
-﻿Shader "Smkgames/Iridescence/SimpleDistortion" {
+﻿// Upgrade NOTE: upgraded instancing buffer 'Props' to new syntax.
+
+Shader "Smkgames/Iridescence/SimpleDistortion" {
 	Properties {
 		[Space(20)][Header(MainTex and ColorRamp)][Space(20)]
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
@@ -59,9 +61,9 @@
 		float _BumpPower;
 		float _Distortion;
 
-		UNITY_INSTANCING_CBUFFER_START(Props)
+		UNITY_INSTANCING_BUFFER_START(Props)
 			// put more per-instance properties here
-		UNITY_INSTANCING_CBUFFER_END
+		UNITY_INSTANCING_BUFFER_END(Props)
 
 		fixed _Hue, _Saturation, _Brightness, _Contrast;
 

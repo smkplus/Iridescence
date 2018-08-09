@@ -59,6 +59,7 @@ Shader "Smkgames/Surface/Iridescence/Bubble" {
 
       CGPROGRAM
     #pragma surface surf Standard fullforwardshadows alpha:fade vertex:vert
+    #pragma target 3.5
 
       struct Input {
           float2 uv_MainTex;
