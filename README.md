@@ -28,7 +28,8 @@ ________________
 ![sf_iridescence_512018](https://user-images.githubusercontent.com/16706911/39463043-d72e663c-4d2a-11e8-8289-e99c1506e96e.png)
 
 # Bubble Shader
-![Bubbles](https://c10.patreonusercontent.com/3/eyJ2IjoiMSIsInciOjEyNDB9/patreon-media/post/18699278/18771ce9eb884353a42bf3c6bf17e9c9?token-time=1527120000&token-hash=-EsmEJNFmkd8eDMioYHkUrmhVUJ-lcNeWvhOvTjvL9A%3D)
+![Dcrf_N8VMAADrZz](https://user-images.githubusercontent.com/16706911/59912294-fdda7300-942a-11e9-8774-a33a9522a8e3.jpg)
+
 
  Anisotropic Iridescence   | Fish Iridescence
 :-------------------------:|:-------------------------:
