@@ -40,6 +40,6 @@ You can discuss In [Unity Forum](https://forum.unity.com/threads/i-need-an-iride
 
 # About Me
 
-I'm Seyed Morteza Kamaly I was born to shade, for the past year I've been dedicating more of my time to the creation of tutorials, mainly about shaders. If you think these posts have either helped or inspired you, please consider supporting me. Thank you so much for your contribution!
+I'm Seyed Morteza Kamali I was born to shade, for the past year I've been dedicating more of my time to the creation of tutorials, mainly about shaders. If you think these posts have either helped or inspired you, please consider supporting me. Thank you so much for your contribution!
 
 https://www.patreon.com/Smkgames
